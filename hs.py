@@ -8,7 +8,7 @@ import serial
 
 py_serial = serial.Serial(
     # Window
-    port='COM3',
+    port='COM4',
     # 보드 레이트 (통신 속도)
     baudrate=9600,
 )
@@ -44,56 +44,56 @@ while True:
     if len(lmList) != 0:
         x1, y1 = lmList[8][1:]
 
-        if ((w_Cam / 4) > x1 > 1) & ((h_Cam / 4) < y1 < 3 * (h_Cam / 4)):
+        if ((w_Cam / 5) > x1 > 1) & ((h_Cam / 5) < y1 < 4 * (h_Cam / 5)):
             cmd = '1'  # ld
             print(cmd)
             k = cmdreturning(cmd)
             commend = k
             py_serial.write(commend.encode())
 
-        elif ((w_Cam / 4) > x1 > 1) & ((h_Cam / 4) > y1 > 1):
+        elif ((w_Cam / 5) > x1 > 1) & ((h_Cam / 5) > y1 > 1):
             cmd = '2'  # lu
             print(cmd)
             k = cmdreturning(cmd)
             commend = k
             py_serial.write(commend.encode())
 
-        elif ((w_Cam / 4) < x1 < 3 * (w_Cam / 4)) & ((h_Cam / 4) > y1 > 1):
+        elif ((w_Cam / 5) < x1 < 4 * (w_Cam / 5)) & ((h_Cam / 5) > y1 > 1):
             cmd = '3'  # rd
             print(cmd)
             k = cmdreturning(cmd)
             commend = k
             py_serial.write(commend.encode())
 
-        elif (3 * (w_Cam / 4) < x1 < 640) & ((h_Cam / 4) > y1 > 1):
+        elif (4 * (w_Cam / 5) < x1 < 640) & ((h_Cam / 5) > y1 > 1):
             cmd = '4'  # ru
             print(cmd)
             k = cmdreturning(cmd)
             commend = k
             py_serial.write(commend.encode())
 
-        elif (3 * (w_Cam / 4) < x1 < 640) & ((h_Cam / 4) < y1 < 3 * (h_Cam / 4)):
+        elif (4 * (w_Cam / 5) < x1 < 640) & ((h_Cam / 5) < y1 < 4 * (h_Cam / 5)):
             cmd = '5'  # ru
             print(cmd)
             k = cmdreturning(cmd)
             commend = k
             py_serial.write(commend.encode())
 
-        elif (3 * (w_Cam / 4) < x1 < 640) & (3 * (h_Cam / 4) < y1 < 480):
+        elif (4 * (w_Cam / 5) < x1 < 640) & (4 * (h_Cam / 5) < y1 < 480):
             cmd = '6'  # ru
             print(cmd)
             k = cmdreturning(cmd)
             commend = k
             py_serial.write(commend.encode())
 
-        elif ((w_Cam / 4) < x1 < 3 * (w_Cam / 4)) & (3 * (h_Cam / 4) < y1 < 480):
+        elif ((w_Cam / 5) < x1 < 4 * (w_Cam / 5)) & (4 * (h_Cam / 5) < y1 < 480):
             cmd = '7'  # ru
             print(cmd)
             k = cmdreturning(cmd)
             commend = k
             py_serial.write(commend.encode())
 
-        elif ((w_Cam / 4) > x1 > 1) & (3 * (h_Cam / 4) < y1 < 480):
+        elif ((w_Cam / 5) > x1 > 1) & (4 * (h_Cam / 5) < y1 < 480):
             cmd = '8'  # ru
             print(cmd)
             k = cmdreturning(cmd)
@@ -110,7 +110,7 @@ while True:
     fingers = hand_detector.fingersUp()
 
     # 마우스 이동
-    if fingers[0] == 0 and fingers[1] == 1 and fingers[2] == 0 :
+    if fingers[1] == 1:
 
         x3 = np.interp(x1, (ast_frame, w_Cam - ast_frame) , (0, w_Screen))
         y3 = np.interp(y1, (ast_frame, h_Cam - ast_frame) , (0, h_Screen))
@@ -122,32 +122,32 @@ while True:
 
         prelocX, prelocY = curlocX, curlocY
 
-    # 우클릭
-    if fingers[0] == 1 and fingers[1] == 1 and fingers[2] == 0 and fingers[4] == 0 :
-        length, img, position = hand_detector.findDistance(4, 8, img)
-        if (position[0] - position[2]) < (16 * customzg_distance):
-            pyautogui.click(button='right')
-            print(pyautogui.click)
-
-    # 좌클릭
-    if fingers[0] == 0 and fingers[1] == 1 and fingers[2] == 1 and fingers[4] == 0 :
-        length, img, position = hand_detector.findDistance(8, 12, img)
-        if length < (9 * customzg_distance):
-            autopy.mouse.click()
-    # 스크롤
-    if fingers[0] == 1 and fingers[1] == 1 and fingers[2] == 1 and fingers[4] == 0 :
-        length, img, position = hand_detector.findDistance(4, 8, img)
-        if position[0] - position[2] > (12 * customzg_distance) :
-            pyautogui.scroll(30, w_Screen - curlocX, curlocY)
-        length, img, position = hand_detector.findDistance(8, 12, img)
-        if length > (12 * customzg_distance):
-            pyautogui.scroll(-30, w_Screen - curlocX, curlocY)
-
-    # 드래그
-    if fingers[0] == 0 and fingers[1] == 1 and fingers[2] == 0 and fingers[4] == 1 :
-        pyautogui.mouseDown(button = 'left')
-        if fingers[0] == 0 and fingers[1] == 1 and fingers[2] == 0 and fingers[4] == 0:
-            pyautogui.moveTo(w_Screen - curlocX, curlocY, duration = 0.1)
+    # # 우클릭
+    # if fingers[0] == 1 and fingers[1] == 1 and fingers[2] == 0 and fingers[4] == 0 :
+    #     length, img, position = hand_detector.findDistance(4, 8, img)
+    #     if (position[0] - position[2]) < (16 * customzg_distance):
+    #         pyautogui.click(button='right')
+    #         print(pyautogui.click)
+    #
+    # # 좌클릭
+    # if fingers[0] == 0 and fingers[1] == 1 and fingers[2] == 1 and fingers[4] == 0 :
+    #     length, img, position = hand_detector.findDistance(8, 12, img)
+    #     if length < (9 * customzg_distance):
+    #         autopy.mouse.click()
+    # # 스크롤
+    # if fingers[0] == 1 and fingers[1] == 1 and fingers[2] == 1 and fingers[4] == 0 :
+    #     length, img, position = hand_detector.findDistance(4, 8, img)
+    #     if position[0] - position[2] > (12 * customzg_distance) :
+    #         pyautogui.scroll(30, w_Screen - curlocX, curlocY)
+    #     length, img, position = hand_detector.findDistance(8, 12, img)
+    #     if length > (12 * customzg_distance):
+    #         pyautogui.scroll(-30, w_Screen - curlocX, curlocY)
+    #
+    # # 드래그
+    # if fingers    [0] == 0 and fingers[1] == 1 and fingers[2] == 0 and fingers[4] == 1 :
+    #     pyautogui.mouseDown(button = 'left')
+    #     if fingers[0] == 0 and fingers[1] == 1 and fingers[2] == 0 and fingers[4] == 0:
+    #         pyautogui.moveTo(w_Screen - curlocX, curlocY, duration = 0.1)
 
 
     curTime = time.time()
