@@ -30,17 +30,17 @@ void loop(){
       servo2.write(angle2); 
       }
     else if (cmd == '2'){
-      angle1++;
+      angle1--;
       servo1.write(angle1);
       angle2++;
       servo2.write(angle2); 
       } 
     else if (cmd == '3'){
-      angle1++;
+      angle1--;
       servo1.write(angle1);
       }
     else if (cmd == '4'){
-      angle1++;
+      angle1--;
       servo1.write(angle1);
       angle2--;
       servo2.write(angle2); 
@@ -50,17 +50,17 @@ void loop(){
       servo2.write(angle2); 
       } 
     else if (cmd == '6'){
-      angle1--;
+      angle1++;
       servo1.write(angle1);
       angle2--;
       servo2.write(angle2); 
       } 
     else if (cmd == '7'){
-      angle1--;
+      angle1++;
       servo1.write(angle1);
       } 
     else if (cmd == '8'){
-      angle1--;
+      angle1++;
       servo1.write(angle1);
       angle2++;
       servo2.write(angle2); 
