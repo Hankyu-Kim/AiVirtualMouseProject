@@ -1,7 +1,8 @@
 # AiVirtualMouseProject
-<img width="80%" src="https://user-images.githubusercontent.com/108254705/205451099-89c9fc4c-1978-4e51-ab03-c4f231bdd986.mp4"/>
-![videoplayback](https://user-images.githubusercontent.com/108254705/205451348-fee58533-e4ae-41bb-9591-90de36146242.gif)
 
+
+![AiVirtualMouse Tracking Function (2)](https://user-images.githubusercontent.com/108254705/205451528-fb701f7d-bb6e-40e3-8414-f4f8886a9720.gif)
+![videoplayback](https://user-images.githubusercontent.com/108254705/205451348-fee58533-e4ae-41bb-9591-90de36146242.gif)
 
 # Hardware : LIMO robot
 ### There are depth camera, LiDAR, IMU sensor on LIMO platform.
