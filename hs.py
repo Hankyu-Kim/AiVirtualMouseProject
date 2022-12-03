@@ -21,7 +21,7 @@ w_Cam, h_Cam = 640, 480
 ast_frame = 120
 smoothening_factor = 4
 customzg_distance = 4.5
-customzg_camera = 1
+customzg_camera = 0
 num = [0, 0]
 #########################
 
@@ -144,7 +144,7 @@ while True:
     #         pyautogui.scroll(-30, w_Screen - curlocX, curlocY)
     #
     # # 드래그
-    # if fingers[0] == 0 and fingers[1] == 1 and fingers[2] == 0 and fingers[4] == 1 :
+    # if fingers    [0] == 0 and fingers[1] == 1 and fingers[2] == 0 and fingers[4] == 1 :
     #     pyautogui.mouseDown(button = 'left')
     #     if fingers[0] == 0 and fingers[1] == 1 and fingers[2] == 0 and fingers[4] == 0:
     #         pyautogui.moveTo(w_Screen - curlocX, curlocY, duration = 0.1)
