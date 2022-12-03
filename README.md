@@ -2,12 +2,16 @@
 
 
 ![AiVirtualMouse Tracking Function (2)](https://user-images.githubusercontent.com/108254705/205451528-fb701f7d-bb6e-40e3-8414-f4f8886a9720.gif)
-
+##tracking function
 <br/>
 <br/>
 <br/>
 
 ![videoplayback](https://user-images.githubusercontent.com/108254705/205451348-fee58533-e4ae-41bb-9591-90de36146242.gif)
+##(E.g. 3D Modeling)
+<br/>
+<br/>
+<br/>
 
 ##AI 3D Virtual Mouse project done as capstone desing in dankook Univ.
 
