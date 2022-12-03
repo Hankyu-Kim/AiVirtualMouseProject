@@ -1,5 +1,5 @@
 # AiVirtualMouseProject
-![AiVirtualMouse Tracking Function](https://user-images.githubusercontent.com/108254705/205451099-89c9fc4c-1978-4e51-ab03-c4f231bdd986.mp4)
+<img width="80%" src="https://user-images.githubusercontent.com/108254705/205451099-89c9fc4c-1978-4e51-ab03-c4f231bdd986.mp4"/>
 ![IMG_3094](https://user-images.githubusercontent.com/108254705/187322714-7d8f22bf-14df-4eae-bc0e-1d8dd65a51ba.gif)
 
 
