@@ -7,10 +7,6 @@
 <br/>
 Power Servo motor(MR996) 2ea
 <br/>
-LED(SZH-EK058)
-<br/>
-Panel mount push button switch
-<br/>
 Arduino Uno
 <br/>
 
