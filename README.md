@@ -14,11 +14,7 @@ Arduino Uno
 
 
 
-## tracking function
-<br/>
-<br/>
-<br/>
-
+## 사용영상
 ![videoplayback](https://user-images.githubusercontent.com/108254705/205451348-fee58533-e4ae-41bb-9591-90de36146242.gif)
 ## (E.g. 3D Modeling)
 <br/>
