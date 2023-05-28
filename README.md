@@ -12,7 +12,6 @@ Arduino Uno
 
 https://www.youtube.com/watch?v=t7P1Vu8TYhk
 
-<br/>
 ## 데모
 ![videoplayback](https://user-images.githubusercontent.com/108254705/205451348-fee58533-e4ae-41bb-9591-90de36146242.gif)
 ## (E.g. 3D Modeling)
