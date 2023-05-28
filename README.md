@@ -1,14 +1,19 @@
 # 3D 모션컨트롤 기기
 전자공학과 전기공학과 로봇공학 전자전기공학과 졸업작품
+<br/>
 준비물 : Webcam
+<br/>
 Power Servo motor(MR996) 2ea
+<br/>
 LED(SZH-EK058)
+<br/>
 Panel mount push button switch
+<br/>
 Arduino Uno
+<br/>
 
 
 
-![AiVirtualMouse Tracking Function (2)](https://user-images.githubusercontent.com/108254705/205451528-fb701f7d-bb6e-40e3-8414-f4f8886a9720.gif)
 ## tracking function
 <br/>
 <br/>
