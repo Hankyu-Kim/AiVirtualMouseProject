@@ -1,5 +1,11 @@
-# AiVirtualMouseProject
-AI 3D Virtual Mouse project done as capstone desing in dankook Univ.
+# 3D 모션컨트롤 기기
+전자공학과 전기공학과 로봇공학 전자전기공학과 졸업작품
+준비물 : Webcam
+Power Servo motor(MR996) 2ea
+LED(SZH-EK058)
+Panel mount push button switch
+Arduino Uno
+
 
 
 ![AiVirtualMouse Tracking Function (2)](https://user-images.githubusercontent.com/108254705/205451528-fb701f7d-bb6e-40e3-8414-f4f8886a9720.gif)
