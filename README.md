@@ -10,6 +10,8 @@ Power Servo motor(MR996) 2ea
 Arduino Uno
 <br/>
 
+### #시리얼통신 #아두이노 #라즈베리파이 #AI #인공지능
+
 ## 사용영상
 ![videoplayback](https://user-images.githubusercontent.com/108254705/205451348-fee58533-e4ae-41bb-9591-90de36146242.gif)
 ## (E.g. 3D Modeling)
