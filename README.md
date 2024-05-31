@@ -2,13 +2,15 @@
 AI 3D Virtual Mouse project done as capstone desing in dankook Univ.
 
 
-![AiVirtualMouse Tracking Function (2)](https://user-images.githubusercontent.com/108254705/205451528-fb701f7d-bb6e-40e3-8414-f4f8886a9720.gif)
-## tracking function
-<br/>
-<br/>
-<br/>
+<p align="center" width="100%">
+  <img src="https://github.com/Hankyu-kim/AiVirtualMouseProject/assets/108254705/00cf0811-d0a9-41da-81a5-301f0e917498" align="center" width="49%">
+  <img src="https://user-images.githubusercontent.com/108254705/205451348-fee58533-e4ae-41bb-9591-90de36146242.gif" align="center" width="49%">
+</p>
 
-![videoplayback](https://user-images.githubusercontent.com/108254705/205451348-fee58533-e4ae-41bb-9591-90de36146242.gif)
+
+
+fig.1 active track | fig.2 control mousr cursor using hand gesture
+
 ## (E.g. 3D Modeling)
 <br/>
 
